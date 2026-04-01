@@ -64,9 +64,10 @@ navLinks.querySelectorAll('a').forEach(link => {
 // ── Typed text effect ───────────────────────────────────────────
 const words = [
   'Cloud Engineer',
+  'AI Cloud Engineer',
   'DevOps Engineer',
   'CloudFormation SME',
-  'IaC Expert'
+  'AI Agents Builder'
 ];
 let wordIdx   = 0;
 let charIdx   = 0;

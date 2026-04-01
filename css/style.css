@@ -642,6 +642,43 @@ img { max-width: 100%; display: block; }
 .skill-tag.container { background: rgba(0, 212, 255, 0.1);  color: var(--clr-accent); border: 1px solid rgba(0,212,255,0.25); }
 .skill-tag.script    { background: rgba(16, 185, 129, 0.1); color: #34d399; border: 1px solid rgba(16,185,129,0.25); }
 .skill-tag.monitor   { background: rgba(245, 158, 11, 0.1); color: #fbbf24; border: 1px solid rgba(245,158,11,0.25); }
+.skill-tag.ai        { background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(124,58,237,0.12)); color: #e0aaff; border: 1px solid rgba(180,120,255,0.35); font-weight: 500; }
+
+/* AI skill category highlight */
+.skill-category.ai-category {
+  border-color: rgba(180,120,255,0.3);
+  background: linear-gradient(135deg, rgba(0,212,255,0.04), rgba(124,58,237,0.08));
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category.ai-category::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(0,212,255,0.4), rgba(124,58,237,0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.skill-category.ai-category .skill-cat-header i {
+  background: linear-gradient(135deg, #00d4ff, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(167,139,250,0.5));
+}
+
+.skill-category.ai-category .skill-cat-header h3 {
+  background: linear-gradient(135deg, #00d4ff, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 /* Skill bars */
 .skills-bars {
@@ -1067,6 +1104,36 @@ img { max-width: 100%; display: block; }
   transform: translateY(-6px);
   border-color: rgba(245, 158, 11, 0.3);
   box-shadow: 0 8px 40px rgba(245, 158, 11, 0.12);
+}
+
+/* AI achievement card */
+.ach-card.ach-card-ai {
+  border-color: rgba(167,139,250,0.25);
+  background: linear-gradient(135deg, rgba(0,212,255,0.04), rgba(124,58,237,0.08));
+}
+
+.ach-card.ach-card-ai::after {
+  background: linear-gradient(90deg, #00d4ff, #a78bfa);
+}
+
+.ach-card.ach-card-ai:hover {
+  border-color: rgba(167,139,250,0.45);
+  box-shadow: 0 8px 40px rgba(124,58,237,0.2);
+}
+
+.ach-card.ach-card-ai .ach-icon {
+  color: #a78bfa;
+  background: rgba(124,58,237,0.12);
+}
+
+.ach-card.ach-card-ai:hover .ach-icon {
+  background: rgba(124,58,237,0.22);
+  box-shadow: 0 0 24px rgba(124,58,237,0.35);
+}
+
+/* AI skill bar gradient */
+.skill-bar-fill.ai-bar {
+  background: linear-gradient(90deg, #00d4ff, #a78bfa);
 }
 
 .ach-icon {
