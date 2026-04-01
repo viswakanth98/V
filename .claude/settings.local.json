@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls:*)",
+      "Bash(python3:*)",
+      "Bash(open http://localhost:8080)",
+      "Bash(kill 24454:*)",
+      "Bash(ls /Users/viswakanth/projects/portfolio/V/*.jpeg /Users/viswakanth/projects/portfolio/V/*.jpg /Users/viswakanth/projects/portfolio/V/*.png)",
+      "Bash(open http://localhost:8080/#testimonials)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh api:*)"
+    ]
+  }
+}
